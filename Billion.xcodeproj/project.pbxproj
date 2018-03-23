@@ -14,6 +14,9 @@
 		E52600502064960E009C94B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E526004E2064960E009C94B5 /* LaunchScreen.storyboard */; };
 		E526005B2064960E009C94B5 /* BillionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E526005A2064960E009C94B5 /* BillionTests.swift */; };
 		E52600662064960E009C94B5 /* BillionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52600652064960E009C94B5 /* BillionUITests.swift */; };
+		E52600742064987D009C94B5 /* Baru.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52600732064987D009C94B5 /* Baru.storyboard */; };
+		E526007620649FEB009C94B5 /* HalamanPertamaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E526007520649FEB009C94B5 /* HalamanPertamaViewController.swift */; };
+		E52600782064A329009C94B5 /* HalamanKeduaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52600772064A329009C94B5 /* HalamanKeduaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E52600612064960E009C94B5 /* BillionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52600652064960E009C94B5 /* BillionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillionUITests.swift; sourceTree = "<group>"; };
 		E52600672064960E009C94B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52600732064987D009C94B5 /* Baru.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Baru.storyboard; sourceTree = "<group>"; };
+		E526007520649FEB009C94B5 /* HalamanPertamaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalamanPertamaViewController.swift; sourceTree = "<group>"; };
+		E52600772064A329009C94B5 /* HalamanKeduaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalamanKeduaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				E52600452064960E009C94B5 /* AppDelegate.swift */,
 				E52600472064960E009C94B5 /* ViewController.swift */,
 				E52600492064960E009C94B5 /* Main.storyboard */,
+				E52600732064987D009C94B5 /* Baru.storyboard */,
+				E52600772064A329009C94B5 /* HalamanKeduaViewController.swift */,
+				E526007520649FEB009C94B5 /* HalamanPertamaViewController.swift */,
 				E526004C2064960E009C94B5 /* Assets.xcassets */,
 				E526004E2064960E009C94B5 /* LaunchScreen.storyboard */,
 				E52600512064960E009C94B5 /* Info.plist */,
@@ -232,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52600742064987D009C94B5 /* Baru.storyboard in Resources */,
 				E52600502064960E009C94B5 /* LaunchScreen.storyboard in Resources */,
 				E526004D2064960E009C94B5 /* Assets.xcassets in Resources */,
 				E526004B2064960E009C94B5 /* Main.storyboard in Resources */,
@@ -259,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52600782064A329009C94B5 /* HalamanKeduaViewController.swift in Sources */,
+				E526007620649FEB009C94B5 /* HalamanPertamaViewController.swift in Sources */,
 				E52600482064960E009C94B5 /* ViewController.swift in Sources */,
 				E52600462064960E009C94B5 /* AppDelegate.swift in Sources */,
 			);
