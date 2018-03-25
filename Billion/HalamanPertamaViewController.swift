@@ -8,11 +8,10 @@
 
 import UIKit
 
-class HalamanPertamaViewController: UIViewController {
-
+class HalamanPertamaViewController: UIViewController, TextEditdDelegate {
+    
     @IBOutlet weak var textfield: UITextField!
     @IBOutlet weak var label: UILabel!
-    
     
     @IBAction func didSelectSubmit(_ sender: UIButton) {
         label.text = textfield.text
@@ -29,8 +28,10 @@ class HalamanPertamaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func didEditText(info: String) {
+        label.text = info
+    }
 
-    
 //     MARK: - Navigation
 //
 //     In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -40,6 +41,7 @@ class HalamanPertamaViewController: UIViewController {
         if segue.identifier == "halamanKeduaSegue" {
             if let halamanKeduaViewController = segue.destination as? HalamanKeduaViewController {
                 halamanKeduaViewController.hasil = textfield.text
+                halamanKeduaViewController.delegate = self
             }
         }
     }

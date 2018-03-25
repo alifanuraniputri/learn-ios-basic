@@ -8,33 +8,40 @@
 
 import UIKit
 
-class HalamanKeduaViewController: UIViewController {
+protocol TextEditdDelegate: class {
+    func didEditText(info: String)
+}
 
-    @IBOutlet weak var labelDua: UILabel!
+class HalamanKeduaViewController: UIViewController {
+    
+    weak var delegate: TextEditdDelegate? = nil
     
     var hasil: String? = ""
+    @IBOutlet weak var textKe2: UITextField!
+    @IBOutlet weak var labelDua: UILabel!
+    
+    @IBAction func submitBack(_ sender: Any) {
+        labelDua.text = textKe2.text
+        delegate?.didEditText(info:textKe2.text!)
+        _ = self.navigationController?.popViewController(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         labelDua.text = hasil
-
-        // Do any additional setup after loading the view.
+        labelDua.text = hasil
+        //self.navigationItem.hidesBackButton = true
+        //let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(HalamanKeduaViewController.back(sender:)))
+        //self.navigationItem.leftBarButtonItem = newBackButton
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func back(sender: UIBarButtonItem) {
+       delegate?.didEditText(info:textKe2.text!)
+        _ = self.navigationController?.popViewController(animated: true)
     }
-    */
+
 
 }
